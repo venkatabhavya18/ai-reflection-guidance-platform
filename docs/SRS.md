@@ -56,5 +56,106 @@ Primary Users                           |  Secondary Users
 - Lifelong learners                     
 The platform is intended for users who seek thoughful guidance, structured reflection and practical next steps rather than generic motivational content.
 
+## 7. Functional Requirements
 
+### 7.1 User Management
+- User Registration
+- Secure Login
+- Profile Management
+- Personal Preferences
 
+### 7.2 AI Reflection & Guidance
+- Accept user situations in natural language.
+- Detect emotions and user intent.
+- Retrieve relevant knowledge using RAG.
+- Generate personalized guidance using LLMs.
+- Explain the reasoning behind recommendations.
+- Suggest one actionable next step.
+
+### 7.3 Knowledge Retrieval
+- Retrieve relevant quotes.
+- Retrieve philosophy concepts.
+- Retrieve psychology insights.
+- Retrieve historical examples.
+- Retrieve books and learning resources.
+
+### 7.4 User Dashboard
+- View previous conversations.
+- Save favorite responses.
+- Track reflection history.
+- View personalized recommendations.
+
+### 7.5 Search
+- Search by topic.
+- Search by emotion.
+- Search by author.
+- Search by keyword.
+
+### 7.6 AI Journal
+- Daily reflection.
+- Mood tracking.
+- Personal notes.
+- Growth history.
+
+### 7.7 Recommendation System
+- Recommend similar wisdom.
+- Recommend books.
+- Recommend articles.
+- Recommend TED Talks.
+
+### 7.8 Explainability
+- Explain retrieved knowledge.
+- Explain AI-generated responses.
+- Display source attribution where available.
+
+## 8. Non - Functional Requirements
+
+### 8.1 Performance
+- The system should respond to user requests within a reasonable time.
+- AI-generated responses should typically be delivered within 3-5 seconds, depending on the selected language model.
+- The platform should efficiently retrieve relevant information from the vector database.
+
+### 8.2 Scalability
+- The architecture should support increasing numbers of users.
+- New datasets, knowledge sources and AI models should be added without major system redesign.
+- The backend should support horizontal scaling when deployed.
+
+### 8.3 Security
+- User authentication must be secure.
+- Passwords must be encrypted before storage.
+- User data should be transmitted using HTTPS.
+- API keys and secrets must never be exposed in the frontend.
+
+### 8.4 Privacy
+- User conversations and journal entries must remain private.
+- Personal information should not be shared with third parties without user consenr.
+- The platform should allow users to delete their stored data.
+
+### 8.5 Reliability
+- The system should remain available even under moderate traffic.
+- Errors should be handled gracefully with meaningful messages.
+- AI failures should provide fallback responses instead of crashing the applictaion.
+
+### 8.6 Explainability
+- The platform should explain why guidance was generated.
+- Retrieved knowledge should include source attribution where available.
+- Users should be able to distinguish retrieved knowledge from AI-generated reasoning.
+
+### 8.7 Usability
+- The interface should be intuitive and beginner-friendly.
+- Navigation should remain consistent across all pages.
+- Users should be able to complete major tasks with minimal effort.
+
+### 8.8 Accessibility
+- The platform should support responsive layouts for desktop and mobile devices.
+- Text should be readable with appropriate contrast.
+- Keyword navigation should be supported where prcatical.
+
+### 8.9 Maintainability
+- The project should follow a modular architecture.
+- Code should be well documented and organized.
+- Components should be reusable whenever possible.
+
+### 8.10 Availability
+- The deployed application should aim for high availability.
+- Logs should be maintained for debugging and monitoring.
