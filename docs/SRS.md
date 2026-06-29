@@ -331,3 +331,24 @@ Context Retrieval
   |
   v
 LLM Prompt
+
+## 13. Large Language Model (LLM)
+The Large Language Model generates personalized guidance using the user's situation, detected emotions, retrieved knowledge and conversation context.
+
+### Responsibilities
+- Situation Understanding
+- Personalized guidance
+- Reflection generation
+- Explanation generation
+- Action-step recommendation
+- Context-aware conversation
+
+Recommended Models:
+
+Development:
+- Gemini API
+
+Future:
+- Llama 3
+- Mistral
+- OpenAI-compatible local models 
