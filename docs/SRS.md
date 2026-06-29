@@ -247,16 +247,16 @@ Response to User
 8. The recommendation engine suggests related resources.
 9. The response is returned to the user and optionally stored for future reference.
 
-# 11. Machine Learning Pipeline
+## 11. Machine Learning Pipeline
 The Machine Learning pipeline is responsible for understanding the user's emotional state and intent before any response is generated.
 
-# 11.1 Text Preprocessing
+### 11.1 Text Preprocessing
 - Remove unwanted characters
 - Normalize text
 - Tokenization
 - Input Validation
 
-# 11.2 Emotion Detection
+### 11.2 Emotion Detection
 The system predicts emotions such as:
 - Joy
 - Sadness
@@ -272,7 +272,7 @@ Recommended Model:
 Dataset:
 - GoEmotions
 
-# 11.3 Sentiment Analysis
+### 11.3 Sentiment Analysis
 The sentiment of the user's purpose, including:
 
 - Seeking motivation
@@ -282,3 +282,52 @@ The sentiment of the user's purpose, including:
 - Learning
 - Career guidance
 - Relationship guidance
+
+## 12. RAG Pipeline
+The platform uses Retrieval-Augmented Generation(RAG) to provide trustworthy and context-aware guidance instead of relying solely on the language model.
+
+### 12.1 Knowledge Base
+The knowledge base contains:
+- Verified quotes
+- Philosophy
+- Psychology
+- Historical examples
+- Scientific concepts
+- Leadership lessons
+- Books
+- Research papers
+- Life experiences
+
+### 12.2 Embedding Model
+Recommended Model:
+- all-MiniLM-L6-v2
+
+Alternative Models:
+- BGE-small
+- E5-small
+
+### 12.3 Vector Database
+Recommended: 
+- FAISS
+
+Alternative:
+- ChromaDB
+
+### 12.4 Retrieval Process
+
+User
+  |
+  v
+Embedding Generation
+  |
+  v
+Vector Search
+  |
+  v
+Top-K Similar Documents
+  |
+  v
+Context Retrieval
+  |
+  v
+LLM Prompt
