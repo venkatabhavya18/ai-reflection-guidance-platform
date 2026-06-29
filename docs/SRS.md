@@ -246,3 +246,39 @@ Response to User
 7. The LLM generates personalized guidance.
 8. The recommendation engine suggests related resources.
 9. The response is returned to the user and optionally stored for future reference.
+
+# 11. Machine Learning Pipeline
+The Machine Learning pipeline is responsible for understanding the user's emotional state and intent before any response is generated.
+
+# 11.1 Text Preprocessing
+- Remove unwanted characters
+- Normalize text
+- Tokenization
+- Input Validation
+
+# 11.2 Emotion Detection
+The system predicts emotions such as:
+- Joy
+- Sadness
+- Anger
+- Fear
+- Love
+- Surprise
+- Neutral
+
+Recommended Model:
+-DistilBERT
+
+Dataset:
+- GoEmotions
+
+# 11.3 Sentiment Analysis
+The sentiment of the user's purpose, including:
+
+- Seeking motivation
+- Looking for advice
+- Decision making
+- Self-reflection
+- Learning
+- Career guidance
+- Relationship guidance
