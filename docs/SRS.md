@@ -128,13 +128,13 @@ The platform is intended for users who seek thoughful guidance, structured refle
 
 ### 8.4 Privacy
 - User conversations and journal entries must remain private.
-- Personal information should not be shared with third parties without user consenr.
+- Personal information should not be shared with third parties without user consent.
 - The platform should allow users to delete their stored data.
 
 ### 8.5 Reliability
 - The system should remain available even under moderate traffic.
 - Errors should be handled gracefully with meaningful messages.
-- AI failures should provide fallback responses instead of crashing the applictaion.
+- AI failures should provide fallback responses instead of crashing the application.
 
 ### 8.6 Explainability
 - The platform should explain why guidance was generated.
@@ -149,7 +149,7 @@ The platform is intended for users who seek thoughful guidance, structured refle
 ### 8.8 Accessibility
 - The platform should support responsive layouts for desktop and mobile devices.
 - Text should be readable with appropriate contrast.
-- Keyword navigation should be supported where prcatical.
+- Keyboard navigation should be supported where prcatical.
 
 ### 8.9 Maintainability
 - The project should follow a modular architecture.
@@ -159,3 +159,90 @@ The platform is intended for users who seek thoughful guidance, structured refle
 ### 8.10 Availability
 - The deployed application should aim for high availability.
 - Logs should be maintained for debugging and monitoring.
+
+## 9. Artificial Intelligence Components
+The platform integrates multiple Artificial Intelligence and Machine Learning technologies to understand user situations, retrieve trustworthy knowledge and generate personalized guidance. These components work together to provide context-aware, explainable and actionable responses.
+
+### 9.1 Natural Language Processing (NLP)
+- Situation understanding
+- Text preprocessing
+- Intent recognition
+
+### 9.2 Machine Learning
+- Emotion Detection
+- Sentiment Analysis
+- Intent Classification
+
+### 9.3 Retrieval-Augmented Generation (RAG)
+- Knowledge Base
+- Embedding Generation
+- Vector Search
+- Context Retrieval
+
+### 9.4 Large Language Models
+- Personalized guidance generation
+- Explaination generation
+- Reflection question generation
+- Action-step recommendation.
+
+### 9.5 Recommendation System
+- Similar wisdom recommendation
+- Book recommendation
+- Article recommendation
+- Learning resource recommendation
+
+### 9.6 Explainable AI
+The platform emphasizes transparency in AI-generated guidance by:
+- Explaining why a recommendation was generated.
+- Distinguishing retrieved knowledge from AI-generated reasoning.
+- Providing source attribution whenever possible.
+- Displaying confidence information for emotion detection where applicable.
+
+## 10. System Architecture
+The platform follows a modular architecture where each component is responsible for a specific task. The architecture seperates the user interface, backend services, machine learning models and large language model to improve scalability, maintainability and performance.
+
+### 10.1 High-Level Architecture
+
+User
+  |
+  v 
+React Frontend
+  |
+  v
+FastAPI Backend
+  |
+  v
+Authentication & API Layer
+  |
+  v
+AI Engine
+
+- Emotion Detection(ML)
+- Intent Classification
+- Sentiment Analysis
+
+- RAG Retrieval Engine
+- Embedding Model
+- Vector Database
+
+- LLM Response Generator
+- Recommendation Engine
+  
+  |
+  v
+PostgreSQL Database
+  |
+  v
+Response to User
+
+## 10.2 Workflow
+
+1. The user enters a situation or problem.
+2. The frontend sends the request to the FastAPI backend.
+3. The backend performs authentication and validation.
+4. The Machine Learning engine detects emotion and intent.
+5. The RAG engine retrieves relevant knowledge from the vector database.
+6. The retrieved context and user information are combined into a prompt.
+7. The LLM generates personalized guidance.
+8. The recommendation engine suggests related resources.
+9. The response is returned to the user and optionally stored for future reference.
