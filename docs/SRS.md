@@ -351,4 +351,87 @@ Development:
 Future:
 - Llama 3
 - Mistral
-- OpenAI-compatible local models 
+- OpenAI-compatible local models
+
+## 14. Database Design
+The platform uses a rational database to manage user information, conversations, journals, preferences, feedback and AI generated responses. The database is designed to ensure scalability, consistency and efficient retrieval of structured data.
+
+### 14.1 Users Table
+Stores user account information.
+
+Fields:
+- user-id (Primary Key)
+- full_name
+- email
+- password_hash
+- profile_picture
+- preferred_language
+- created_at
+- updtaed_at
+
+### 14.2 User Preferences Table
+Stores personalization settings.
+
+Fields:
+- preference_id
+- user_id (Foreign Key)
+- preferred_categories
+- notification_categories
+- theme
+- language
+
+### 14.3 Conversations Table
+Stores all AI conversations.
+
+Fields:
+- conversation_id
+- user_id
+- detected_emotion
+- detected_intent
+- ai_response
+- created_at
+
+### 14.4 Journal Entries Table
+Stores daily reflections.
+
+Fields:
+- journal_id
+- user_id
+- journal_text
+- detected_mood
+- reflection_summary
+- created_at
+
+### 14.5 Saved Guidance Table
+Stores user-saved AI guidance.
+
+Fields:
+- saved_id
+- user_id
+- conversation_id
+- rating
+- comments
+- created_at
+
+### 14.6 Feedback Table
+Stores user feedback.
+
+Fields:
+- feedback_id
+- user_id
+- conversation_id
+- rating
+- comments
+- created_at
+
+### 14.7 Knowledge Base Metadata
+Stores metadata for RAG documents.
+
+Fields:
+- document_id
+- title
+- category
+- source
+- author
+- keywords
+- embedding_reference
