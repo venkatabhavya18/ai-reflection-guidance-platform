@@ -435,3 +435,32 @@ Fields:
 - author
 - keywords
 - embedding_reference
+
+## 15. API Design
+The backend exposes RESTFul APIs for communication between the frontend and AI services.
+
+### Authentication APIs
+- POST / signup
+- POST / login
+- POST / logout
+
+### User APIs
+- GET / profile
+- PUT /profile
+
+### AI APIs
+- POST / analyze
+- POST / generate-guidance
+- POST / journal-analysis
+
+### Search APIs
+- GET / search
+
+### Recommendation APIs
+- GET / recommendations
+ 
+### Feedback APIs
+- POST / feedback
+
+### History APIs
+- GET / history
