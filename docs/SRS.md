@@ -464,3 +464,40 @@ The backend exposes RESTFul APIs for communication between the frontend and AI s
 
 ### History APIs
 - GET / history
+
+## 16. Technology Stack
+
+### Frontend
+- React
+- Tailwind CSS
+
+### Backend
+- FastAPI
+- Python
+
+### Machine Learning
+- PyTorch
+- Hugging Face Transformers
+- Sentence Transformers
+- scikit-learn
+
+### Retrieval-Augmented Generation
+- LangChain
+- FAISS
+- ChromaDB
+
+### Database
+- Postgre SQL
+
+### Authentication
+- JWT
+- OAuth (Future)
+
+### Deployment
+- Docker
+- Render
+- Vercel
+
+### Version Control
+- Git
+- GitHub
