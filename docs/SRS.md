@@ -501,3 +501,27 @@ The backend exposes RESTFul APIs for communication between the frontend and AI s
 ### Version Control
 - Git
 - GitHub
+
+## 17. Security & Privacy
+
+- Passwords will be securely hashed before storage.
+- Sensitive API keys will be stored using environment variables.
+- User data will be transmitted over HTTPS.
+- Personal conversations and journal entries will remain private.
+- Users can request deletion of their stored data.
+- AI responses will include source atttribution where applicable
+ 
+## 18. Future Scope
+Future enhancements may include:
+ 
+- Mobile application (Android and iOS)
+- Voice-based interaction
+- AI coach mode
+- Browser extension
+- Calendar integration
+- Smart reminders
+- Team Collaboration spaces 
+- Personalized learning paths
+- Multi-language expansion
+- Wearable device integration
+- Emotion detection using voice and facial expressions.
