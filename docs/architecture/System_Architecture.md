@@ -197,3 +197,48 @@ The RAG Layer retrieves trustworthy knowledge relevant to the user's situation b
 - LangChain
 - FAISS
 - Sentence Transformers
+
+### 6.5 Large Language Model Layer
+The Large Language Model generates personalized guidance using the user's context and retrieved knowledge.
+
+#### Responsibilities
+- Situation Understanding
+- Guidance Generation
+- Reflection Question Generation
+- Explaination Generation
+- Action Recommendation
+
+#### Developement Model
+- Gemini API
+
+#### Future Models
+- Llama 3
+- Mistral
+- Self-hosted Open Source Models
+
+### 6.6 Database Layer
+The Database Layer stores application data securely.
+
+#### Stores
+- User Accounts
+- Conversations
+- Journal Entries
+- Saved Guidance
+- User Feedback
+- Preferences
+- Analytics Data
+
+#### Technology
+- PostgreSQL
+
+### 6.7 Analytics Layer
+The Analytics Layer provides insights into user interactions and platform performance while respecting user privacy.
+
+#### Responsibilities
+- Reflection statistics
+- User engagement
+- Growth trends
+- Popular guidance categories
+- System performance monitoring
+The analytics data helps improve the platform without exposing personal user information.
+
