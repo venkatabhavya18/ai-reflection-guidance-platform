@@ -527,4 +527,14 @@ The architecture supports future enhancements such as:
 - Federated learning  for privacy-perserving model improvements
 
 ## 9. Conclusion
-The 
+The proposed System Architecture provides a modular, scalable and intelligent foundation for the AI Reflection & Guidance Platform.
+
+By integrating Machine Learning, Natural Language Processing, Retrieval-Augmented Generation (RAG), and Large Language Models, the platform delivers personalized, explainable and actionable guidance instead of generic motivational content.
+
+The modular design ensures that individual components can be improved or replaced without affecting the overall system, making the platform suitable for future research, industrial applications and real-world deployment.
+
+The architecture reflects the project's core philosophy:
+
+**Understand -> Reflect -> Act**
+
+This philosophy guides every interaction and ensures that the platform supports users in making thoughtful, informed and meaningful decisions.
