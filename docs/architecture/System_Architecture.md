@@ -242,3 +242,182 @@ The Analytics Layer provides insights into user interactions and platform perfor
 - System performance monitoring
 The analytics data helps improve the platform without exposing personal user information.
 
+## 7. AI Reflection Pipeline
+The AI Reflection Pipeline is the core workflow of the platform. Every user interaction passes through a sequence of intelligent stages that analyze the user's situation, retrieve relevant knowledge, generate personalized guidance and encourage meaningful action.
+Unlike traditional quote generators that randomly display motivational quotes, this platform follows a structured AI pipeline to ensure that every response is context-aware, explainable and actionable.
+
+### 7.1 Step 1 - User Input
+The process begins when the user describes a real-life situation, challenge, thought or question using natural language.
+
+#### Example
+"I failed my interview and now I don't know what to do."
+The user's input is securely sent to the backend for processing.
+
+### 7.2 Step 2 - Input Validation
+THe backend validates the request by:
+- Checking authenication
+- Validating request format
+- Removing invalid characters
+- Preventing malicious input
+Only valid requests proceed to the AI modules.
+
+### 7.3 Step 3 - Situation Understanding
+The AI first understands the overall context of the user's message.
+
+#### Example
+Input : "I failed my interview."
+Situation : 
+Career Setback
+Understanding the situation helps later modules retrieve more relevant knowledge.
+
+### 7.4 Step 4 - Emotion Detection
+The Machine Learning model predicts the user's emotional state.
+Possible emotions include:
+- Sadness
+- Fear
+- Anger
+- Joy
+- Hope
+- Anxiety
+- Frustration
+- Confusion
+
+#### Example Output : 
+Emotion : Sadness
+Confidence : 96%
+This step enables the platform to generate emotionally appropriate guidance.
+
+### 7.5 Step 5 - Intent Detection
+Emotion alone does not explain what the user needs.
+The Intent Detection model identifies the user's purpose.
+
+Possible intents include:
+- Seeking guidance
+- Emotional support
+- Career advice
+- Relationship advice
+- Self-improvement
+- Decision Making]
+- Motivation
+
+#### Example:
+Emotion : Sadness
+Intent : Career Guidance
+This distinction improves personalization.
+
+### 7.6 Step 6 - Knowledge Retrieval (RAG)
+The Retrieval-Augmented Generation (RAG) module searches the knowledge base for trustworthy and relevant information.
+The knowledge base may contain:
+- Quotes
+- Psychology concepts
+- Philosophy
+- Historical examples
+- Leadership lessons
+- Scientific research
+- Books
+- Productivity frameworks
+Instead of relying solely on the LLM, the retrieved knowledge provides factual grounding.
+
+### 7.7 Step 7 - Perspective Selection
+One of the unique features of the platform is the Perspective Selector.
+Rather than presenting random advice, the AI determines which perspective is most suitable for the user's situation.
+
+Possible perspectives include:
+- Psychology
+- Philosophy
+- Leadership
+- Scientific Research
+- Historical Events
+- Literature
+
+#### Example:
+Career setback
+      |
+      v
+Leadership + Psychology Relationship conflict
+      |
+      v
+Psychology + Communication
+
+This ensures that guidance is relevant and meaningful.
+
+### 7.8 Step 8 - Reflection Engine
+The Reflection Engine encourages users to think deeply before acting.
+Instead of immediately providing solutions, it generates meaningful reflection questions.
+
+#### Example : 
+"What part of this situation is within your control?"
+Reflection promotes self-awareness and long-term personal growth.
+
+### 7.9 Step 9 - Action Planner
+Every interaction concludes with one prcatical, achievable action.
+
+#### Examples : 
+- Update your resume today.
+- Reach out to one trusted friend.
+- Write three lessons you learned.
+- Spend 20 minutes preparing for your next interview.
+
+The Action Planner transforms reflection into meaningful progress.
+
+### 7.10 Step 10 - Guidance Generation
+The Large Language Model combines:
+- User context
+- Emotion
+- Intent
+- Retrieved knowledge
+- Selected prespective
+- Reflection
+- Action plan
+to generate personalized guidance.
+
+The reason contains :
+- Personalized guidance
+- Explaination
+- Reflection question
+- One practical action
+
+### 7.11 Step 11 - Feedback Collection
+Users may provide feedback on the generated guidance.
+
+Possible feedback includes:
+- Helpful
+- Not Helpful
+- Save Response
+- Share Response
+
+This feedback helps improve future recommendations and platform quality.
+
+### 7.12 Pipeline Summary
+The complete AI workflow can be summarized as follows:
+User
+  |
+  v
+Situation Understanding
+  |
+  v
+Emotion Detection
+  |
+  v
+Intent Detection
+  |
+  v
+Knowledge Retrieval (RAG)
+  |
+  V
+Perspective Selection
+  |
+  v 
+Reflection Engine
+  |
+  v
+Action Planner
+  |
+  v
+LLM Guidance Generation
+  |
+  v
+User Feedback
+  |
+  v
+Continuous Improvement
