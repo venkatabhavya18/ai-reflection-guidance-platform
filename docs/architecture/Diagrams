@@ -1,0 +1,14 @@
+Users
+  |
+  |_____________________
+  |                     |
+  v                     v
+Journal            Conversations
+                        |
+                        v
+                    AI Responses
+                        |
+               _________|___________
+               |                   |
+               v                   v
+        Saved Guidance          Feedback
