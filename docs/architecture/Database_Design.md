@@ -25,3 +25,22 @@ The database contains the following primary entities:
 - Feedback
 - User Preferences
 - Analytics Logs
+
+## 4. Database Tables
+
+### 4.1 Users
+Stores registered user information
+
+|   Field            |    Type    |  Description           |   
+------------------------------------------------------------
+| user_id            |     UUID   | Primary Key            |
+| full_name          |   VARCHAR  | User's name            |
+|  email             |   VARCHAR  | Unique email           |
+| password_hash      |   VARCHAR  | Encrypted password     |
+| profile_picture    |    TEXT    | Optional profile image |
+| preferred_language |  VARCHAR   | Selected language      |
+| created_at         | TIMESTAMP  | Account creation date  |
+| updated_at         | TIMESTAMP  | Last profile update    |
+
+### 4.2 Conversations
+Stores all user conversation with the AI
