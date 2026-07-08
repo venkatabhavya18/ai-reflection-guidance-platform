@@ -98,4 +98,16 @@ Stores user feedback on AI responses.
 |    theme             |    VARCHAR     |      Light/Dark         |
 | notification_enabled |    BOOLEAN     |      Notification       |
 
-## 5. Entity
+## 5. Entity Relationships
+The database follows a relational design.
+Relationship summary:
+
+- One User can have many conversations.
+- One User can have many journal entries.
+- One User can save multiple AI Responses.
+- One Conversations can receive one or more Feedback records.
+- One User has one Preferences profile.
+
+This design minimizes data duplication while maintaining referential integrity.
+
+## 6. Database Diagram
