@@ -43,4 +43,59 @@ Stores registered user information
 | updated_at         | TIMESTAMP  | Last profile update    |
 
 ### 4.2 Conversations
-Stores all user conversation with the AI
+Stores all user conversation with the AI.
+
+|            Field               |       Type          |         Description              |
+-------------------------------------------------------------------------------------------
+|       conversation_id          |        UUID         |         Primary key              |
+|        user_id                 |        UUID         |         Foreign key              |
+|        user_input              |        TEXT         |   Situation entered by user      |
+|    detected_emotion            |      VARCHAR        |         ML prediction            |
+|    detected_intent             |      VARCHAR        |    Intent Classification         |
+|   retrieved_context            |       TEXT          |    RAG retrieved knowledge       |
+|          ai_response           |       TEXT          |     Final AI guidance            |
+|       created_at               |     TIMESTAMP       |            Timestamp             |
+
+### 4.3 Journal Entries
+Stores personal reflection journals.
+
+|        Field           |     Type       |      Description           |
+------------------------------------------------------------------------
+|      journal_id        |     UUID       |    Primary key             |
+|       user_id          |     UUID       |    Foreign key             |
+|        title           |   VARCHAR      |    Journal title           |
+|       content          |     TEXT       |    User reflection         |
+|     detceted_emotion   |   VARCHAR      |    ML prediction           |
+|      created_at        |  TIMESTAMP     |    Creation date           |
+
+### 4.4 Saved Guidance
+Stores AI responses by users.
+
+|        Field            |   Type      |     Description            |
+----------------------------------------------------------------------
+|      saved_id           |   UUID      |     Primary key            |
+|      user_id            |   UUID      |      user_id               |
+|   conversation_id       |   UUID      |  Related conversation      |
+|     created_at          | TIMESTAMP   |      Save date             |
+
+### 4.5 Feedback 
+Stores user feedback on AI responses.
+
+|        Field       |       Type       |       Description       |
+-------------------------------------------------------------------
+|  feedback_id       |      UUID        |     Primary key         |
+|  conversation_id   |      UUID        |  Related conversation   |
+|  rating            |    INTEGER       |  Rating (1-5)           |
+|  comment           |      TEXT        |  Optional feedback      |
+|  created_at        |    TIMESTAMP     |  Feedback date          |
+
+### 4.6 User Preferences
+|      Field           |     Type       |     Description         |
+-------------------------------------------------------------------
+|  preference_id       |     UUID       |      Primary key        |
+|   user_id            |     UUID       |      Foreign key        |
+| preferred_language   |    VARCHAR     |       Language          |
+|    theme             |    VARCHAR     |      Light/Dark         |
+| notification_enabled |    BOOLEAN     |      Notification       |
+
+## 5. Entity
