@@ -110,4 +110,36 @@ Relationship summary:
 
 This design minimizes data duplication while maintaining referential integrity.
 
-## 6. Database Diagram
+## 6. Entity Relationship Diagram (ERD)
+The Entity Relationship Diagram illustrates the relationships among the database entities.
+
+User
+  |
+  |
+  |--------< Conversations
+  |--------< Journal Entries
+  |--------< Saved Guidance
+  |--------< Preferences
+
+Conversations 
+  |
+  |------< Feedback
+
+## 7. Security Considerations
+The database follows industry-standard security practices.
+
+- Passwords are stored as hashed values.
+- Sensitive data is encrypted where necessary.
+- Foreign key constraints maintain data integrity.
+- Access is restriced through authenticated APIs.
+-Personally identifiable information is protected.
+
+## 8.Future Expansion
+The database design supports future enhancements including:
+
+- Voice conversations
+- AI memory
+- Weekly reflection reports
+- Learning recommendations
+- Multi-device synchronization
+- Additional AI models
